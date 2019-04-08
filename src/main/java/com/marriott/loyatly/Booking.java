@@ -1,7 +1,6 @@
 package com.marriott.loyatly;
 
 import java.util.HashMap;
-import java.util.List;
 
 public class Booking {
 	private String bookingId;
@@ -11,8 +10,7 @@ public class Booking {
 	private int numOfKids;
 	private int bookingDuration;
 	private int numOfAdults;
-	private List<HotelAmenity> hotelAmenity;
-	private HashMap<String, HotelAmenity> someKeyValuePair;
+	private HashMap<String, HotelAmenity> hotelAmenity;
 	private String corpCode;
 	private String state;
 	private String hotelCode;
@@ -72,14 +70,6 @@ public class Booking {
 		this.bookingDuration = bookingDuration;
 	}
 
-	public List<HotelAmenity> getHotelAmenity() {
-		return hotelAmenity;
-	}
-
-	public void setHotelAmenity(List<HotelAmenity> hotelAmenity) {
-		this.hotelAmenity = hotelAmenity;
-	}
-
 	public String getState() {
 		return state;
 	}
@@ -108,12 +98,13 @@ public class Booking {
 		this.bookingId = bookingId;
 	}
 
-	public HashMap<String, HotelAmenity> getSomeKeyValuePair() {
-		return someKeyValuePair;
+	public HashMap<String, HotelAmenity> getHotelAmenity() {
+		return hotelAmenity;
 	}
 
-	public void setSomeKeyValuePair(HashMap<String, HotelAmenity> someKeyValuePair) {
-		this.someKeyValuePair = someKeyValuePair;
+	public void setHotelAmenity(HashMap<String, HotelAmenity> hotelAmenity) {
+		this.hotelAmenity = hotelAmenity;
 	}
+
 
 }
