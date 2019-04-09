@@ -1,4 +1,4 @@
-package com.marriott.loyatly;
+package com.marriott.loyalty;
 
 import java.util.HashMap;
 

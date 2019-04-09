@@ -1,4 +1,4 @@
-package com.marriott.loyatly;
+package com.marriott.loyalty;
 
 public enum HotelAmenity {
 	FAMILY_TRAVEL(1), FREE_BREAKFAST(2), POOL(3), BUSINESS_CENTER(4), FREE_HIGH_SPEED_INTERNET(5),
