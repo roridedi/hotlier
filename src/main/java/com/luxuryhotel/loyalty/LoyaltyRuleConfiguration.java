@@ -1,4 +1,4 @@
-package com.marriott.loyalty;
+package com.luxuryhotel.loyalty;
 
 
 import org.kie.api.KieServices;
@@ -26,8 +26,6 @@ public class LoyaltyRuleConfiguration {
         KieBuilder kieBuilder = kieServices.newKieBuilder(kieFileSystem);
         kieBuilder.buildAll();
         KieModule kieModule = kieBuilder.getKieModule();
-
         return kieServices.newKieContainer(kieModule.getReleaseId());
-        
     }
 }

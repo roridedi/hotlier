@@ -1,4 +1,4 @@
-package com.marriott.loyalty;
+package com.luxuryhotel.loyalty;
 
 import java.util.HashMap;
 
@@ -104,6 +104,14 @@ public class Booking {
 
 	public void setHotelAmenity(HashMap<String, HotelAmenity> hotelAmenity) {
 		this.hotelAmenity = hotelAmenity;
+	}
+
+	@Override
+	public String toString() {
+		return "Booking [bookingId=" + bookingId + ", city=" + city + ", isAirport=" + isAirport + ", airportCode="
+				+ airportCode + ", numOfKids=" + numOfKids + ", bookingDuration=" + bookingDuration + ", numOfAdults="
+				+ numOfAdults + ", hotelAmenity=" + hotelAmenity + ", corpCode=" + corpCode + ", state=" + state
+				+ ", hotelCode=" + hotelCode + "]";
 	}
 
 

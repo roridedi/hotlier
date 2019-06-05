@@ -1,4 +1,4 @@
-package com.marriott.loyalty;
+package com.luxuryhotel.loyalty;
 
 import java.util.HashMap;
 
@@ -19,7 +19,6 @@ public class LoyaltyRuleService {
 		kieSession.insert(booking);
 		kieSession.fireAllRules();
 		kieSession.dispose();
-		System.out.println("!! RIDE FARE !! " + amenities.toString());
 		return amenities;
 	}
 }

@@ -1,4 +1,4 @@
-package com.marriott.loyalty;
+package com.luxuryhotel.loyalty;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
