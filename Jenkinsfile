@@ -15,9 +15,9 @@ openshift.withCluster() {
   env.TARGET = env.BUILD_CONTEXT_DIR ? "${env.BUILD_CONTEXT_DIR}/target" : "target"
   env.APP_NAME = "${JOB_NAME}".replaceAll(/-build.*/, '')
   env.BUILD = openshift.project()
-  env.DEV = "labs-dev"
-  env.STAGE = "labs-stage"
-  env.PROD = "labs-prod"
+  env.DEV = "spring-boot-web-dev"
+  env.STAGE = "spring-boot-web-stage"
+  env.PROD = "spring-boot-web-prod"
   echo "Starting Pipeline for ${APP_NAME}..."
 }
 
@@ -52,11 +52,6 @@ pipeline {
       }
     }
 
-    stage('Unit Test') {
-      steps {
-        sh "mvn -B test -f ${pom_file} -Dmaven.test.skip=true"
-      }
-    }
 
     stage('Build Container Image'){
       steps {
