@@ -16,7 +16,7 @@
 		<version>2.1.4.RELEASE</version>
 	</parent>
 	<properties>
-		<runtime.version>7.0.0.Final</runtime.version>
+		<runtime.version>7.59.0.Final-redhat-00006</runtime.version>
 		<java.version>1.8</java.version>
 	</properties>
 
